@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 
 import { supabase } from '../components/supabase';
-import AnimatedBackground from '../components/animatedbackground';
 
 type LoginProps = {
   onLoginSuccess: (username: string) => void;
@@ -85,8 +84,6 @@ export default function Login({ onLoginSuccess }: LoginProps) {
 
   return (
     <View style={styles.wrapper}>
-      {/* BACKGROUND */}
-      <AnimatedBackground />
 
       {/* CONTENT */}
       <View style={styles.container}>
